@@ -74,7 +74,7 @@ contract TmdsMasterChef is Ownable, ReentrancyGuard {
     // Max harvest interval: 14 days.
     uint256 public constant MAXIMUM_HARVEST_INTERVAL = 360 days;
     // Max deposit fee: 10%
-    uint16 public constant MAXIMUM_DEPOSIT_FEE = 200;
+    uint16 public constant MAXIMUM_DEPOSIT_FEE = 1000;
     // Maximum emission rate
     uint256 public constant MAXIMUM_EMISSON_RATE = 10**4;
 
