@@ -261,7 +261,7 @@ contract TmdsIto is Ownable {
         require(sumSoFar <= maxPerUser, "User maximum limited");
 
         boughtPerUser[msg.sender] = sumSoFar;
-        totalSold = totalSold.add(tokensToBuy);
+        totalSold = totalSold.add(bnbAmount);
 
         require(totalSold <= hardcap, "Reached hardcap");
 
